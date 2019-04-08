@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentActivity" customModule="Babydoc" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customMessageCell" rowHeight="82" id="Rer-Al-PYS" customClass="CustomMessageCell" customModule="Babydoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rer-Al-PYS" id="tN4-rh-YH9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-JV-Lfr">
+                        <rect key="frame" x="0.0" y="10" width="53" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="JYW-qG-2h7"/>
+                            <constraint firstAttribute="height" constant="53" id="ewQ-zQ-KE9"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwf-3J-tP4">
+                        <rect key="frame" x="59" y="10" width="251" height="60.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" text="Bebesitooo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neo-NC-P7G">
+                                <rect key="frame" x="9" y="19" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Neo-NC-P7G" firstAttribute="leading" secondItem="Vwf-3J-tP4" secondAttribute="leading" constant="9" id="XCy-JF-Z5f"/>
+                            <constraint firstAttribute="bottom" secondItem="Neo-NC-P7G" secondAttribute="bottom" constant="20" id="lL5-eg-eQU"/>
+                            <constraint firstAttribute="trailing" secondItem="Neo-NC-P7G" secondAttribute="trailing" constant="-2" id="sfR-nE-YI1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vke-JV-Lfr" firstAttribute="top" secondItem="tN4-rh-YH9" secondAttribute="top" constant="10" id="3zp-Uf-YWp"/>
+                    <constraint firstItem="Vke-JV-Lfr" firstAttribute="leading" secondItem="tN4-rh-YH9" secondAttribute="leading" id="Dbi-2P-RGo"/>
+                    <constraint firstItem="Vwf-3J-tP4" firstAttribute="leading" secondItem="Vke-JV-Lfr" secondAttribute="trailing" constant="6" id="TVI-pv-Ofy"/>
+                    <constraint firstAttribute="trailing" secondItem="Vwf-3J-tP4" secondAttribute="trailing" constant="10" id="U2R-q1-goN"/>
+                    <constraint firstItem="Vwf-3J-tP4" firstAttribute="top" secondItem="tN4-rh-YH9" secondAttribute="top" constant="10" id="cmh-lC-LXZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Vwf-3J-tP4" secondAttribute="bottom" constant="10" id="kIk-YL-CeX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="Vke-JV-Lfr" id="QGn-g8-qNA"/>
+                <outlet property="messageBackground" destination="Vwf-3J-tP4" id="XDK-vD-jY9"/>
+                <outlet property="messageBody" destination="Neo-NC-P7G" id="7eP-He-L1b"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="164"/>
+        </tableViewCell>
+    </objects>
+</document>
